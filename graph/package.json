@@ -1,0 +1,23 @@
+{
+  "name": "@template/graph",
+  "version": "1.0.0",
+  "description": "graph node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codenamejason/dapp_template_v1.git"
+  },
+  "keywords": [
+    "graph",
+    "protocol"
+  ],
+  "author": "Jason Romero",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codenamejason/dapp_template_v1/issues"
+  },
+  "homepage": "https://github.com/codenamejason/dapp_template_v1#readme"
+}

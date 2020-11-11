@@ -1,7 +1,7 @@
 {
-  "name": "dapp_template",
+  "name": "@insurenet/monorepo",
   "version": "0.1.0",
-  "description": "Template for DApps dev. containing (i.a.): (boostrap, react, web3) + chai&truffle env.",
+  "description": "Template for dApps dev. containing (i.a.): (boostrap, react, web3) + chai&truffle env.",
   "author": "github.com/codenamejason",
   "homepage": ".",
   "private": true,
@@ -27,16 +27,16 @@
     "web3": "1.3.0"
   },
   "scripts": {
-    "start": "yarn workspace @dapp_template react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "yarn workspace @insurenet/dapp start",
+    "build": "yarn workspace @insurenet/dapp build --max-old-space-size=12288",
+    "test": "yarn workspace @insurenet/dapp test",
+    "eject": "yarn workspace @insurenet/dapp eject"
   },
-  "workspaces":{
-    "packages": [
-      "packages/*"
-    ]
-  },
+  "workspaces": [
+    "@insurenet/dapp",
+    "@insurenet/graph",
+    "@insurenet/api"
+  ],
   "eslintConfig": {
     "extends": "react-app"
   },
