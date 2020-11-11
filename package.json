@@ -2,8 +2,9 @@
   "name": "dapp_template_v1",
   "version": "0.1.0",
   "description": "Template for DApps dev. containing (i.a.): (boostrap, react, web3) + chai&truffle env.",
-  "author": "github.com/xternet",
+  "author": "github.com/codenamejason",
   "homepage": ".",
+  "private": true,
   "dependencies": {
     "@truffle/hdwallet-provider": "1.1.0",
     "babel-polyfill": "6.26.0",
@@ -30,6 +31,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "workspaces":{
+    "packages": [
+      "packages/*"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
